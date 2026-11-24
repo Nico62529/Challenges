@@ -92,10 +92,20 @@ def is_integer(value: float) -> bool:
 
 def is_leap_year(year: int) -> bool:
 
-    if year % 400 or (year % 4 and not year % 100):
+    if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
         return True
     else:
         return False
+
+# Ejercicio 9
+
+def contains_char(text: str, char: str) -> bool:
+    for i in text:
+        if i == char:
+            return True
+
+    return False
+
     
 
 
