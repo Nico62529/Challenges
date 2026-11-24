@@ -1,3 +1,5 @@
+# Challenges from: https://coding-challenges.dev
+
 # Ejercicio 1
 
 def al_menos_una_verdadera(PrimerValor: bool, SegundoValor: bool):
@@ -72,9 +74,9 @@ def starts_with(text: str, prefix: str) -> bool:
                 Constante += 1
             elif i != a and Constante >= 1:
                 return True
-            else: 
+            elif i != a:
                 return False
-            if i != a:
+            else: 
                 return False
 
 # Ejercicio 7
@@ -86,8 +88,14 @@ def is_integer(value: float) -> bool:
     else:
         return False
 
+# Ejercicio 8
 
+def is_leap_year(year: int) -> bool:
 
+    if year % 400 or (year % 4 and not year % 100):
+        return True
+    else:
+        return False
     
 
 
